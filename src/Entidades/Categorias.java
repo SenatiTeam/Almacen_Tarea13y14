@@ -20,6 +20,11 @@ public class Categorias {
         this.condicion = condicion;
     }
     
+    public Categorias(int id_Categorias, String nombre){
+        this.id_categoria = id_Categorias;
+        this.Nombre = nombre;
+    }
+    
     // Get and Set
 
     public int getId_categoria() {

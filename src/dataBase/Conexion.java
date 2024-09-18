@@ -27,7 +27,6 @@ public class Conexion {
         try {
             Class.forName(DRIVER);
             this.cadena=DriverManager.getConnection(URL+DB,USER,PASSWORD);
-            JOptionPane.showMessageDialog(null, "CONEXIÓN ESTABLECIDA, FELICITACIONES :)");
         }catch (ClassNotFoundException | SQLException e){
             JOptionPane.showMessageDialog(null,"ERROR DE CONEXIÓN A LA BASE DE DATOS " + e.getMessage()); // e.getMessage muestra el error 
             System.exit(0);

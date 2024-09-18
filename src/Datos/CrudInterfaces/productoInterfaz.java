@@ -3,8 +3,7 @@ package Datos.CrudInterfaces;
 
 import java.util.List;
 
-
-public interface CategoriaInterfaz <T> {
+public interface productoInterfaz <T>{
     // Método para el CRUD
     public List<T> listar(String texto);
     public boolean insertar (T obj);
